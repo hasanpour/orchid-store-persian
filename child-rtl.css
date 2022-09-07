@@ -208,3 +208,12 @@ small {
 		font-size: 7.5px;
 	}
 }
+
+/* Add top margin because we move it to bottom of post content */
+.inner-content-metas {
+  margin-top: 20px;
+}
+
+header.woocommerce-products-header {
+  margin-top: 20px;
+}
