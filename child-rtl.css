@@ -1,0 +1,210 @@
+/*
+* Theme Name: Orchid store Child
+* Package: Orchid store
+* Contributor: Armin Hasanour
+* Author url: https://about.me/hasanpour
+* File: Child RTL css 
+*/
+
+/*
+====================================
+=
+= RTL direction
+=
+==========================
+*/
+
+body.rtl {
+
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+
+/*
+====================================
+=
+= General styles
+=
+==========================
+*/
+
+/* fonts */
+@font-face {
+	font-family: 'Shabnam';
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/Shabnam/Shabnam/Shabnam-FD.eot');
+	src: url('assets/fonts/Shabnam/Shabnam/Shabnam-FD.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/Shabnam/Shabnam/Shabnam-FD.woff2') format('woff2'),
+		url('assets/fonts/Shabnam/Shabnam/Shabnam-FD.woff') format('woff'),
+		url('assets/fonts/Shabnam/Shabnam/Shabnam-FD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Shabnam';
+	font-style: normal;
+	font-weight: bold;
+	src: url('assets/fonts/Shabnam/Shabnam-Bold/Shabnam-Bold-FD.eot');
+	src: url('assets/fonts/Shabnam/Shabnam-Bold/Shabnam-Bold-FD.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/Shabnam/Shabnam-Bold/Shabnam-Bold-FD.woff2') format('woff2'),
+		url('assets/fonts/Shabnam/Shabnam-Bold/Shabnam-Bold-FD.woff') format('woff'),
+		url('assets/fonts/Shabnam/Shabnam-Bold/Shabnam-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Shabnam';
+	font-style: normal;
+	font-weight: lighter;
+	src: url('assets/fonts/Shabnam/Shabnam-Light/Shabnam-Light-FD.eot');
+	src: url('assets/fonts/Shabnam/Shabnam-Light/Shabnam-Light-FD.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/Shabnam/Shabnam-Light/Shabnam-Light-FD.woff2') format('woff2'),
+		url('assets/fonts/Shabnam/Shabnam-Light/Shabnam-Light-FD.woff') format('woff'),
+		url('assets/fonts/Shabnam/Shabnam-Light/Shabnam-Light-FD.ttf') format('truetype');
+}
+
+body, a, ul, li, table, h1, h2, h3, h4, h5, h6, input, textarea, select, button, select, option, p, .woocommerce-Price-amount, .amount, .count, .cart-amount {
+		font-family: Shabnam !important;
+}
+
+/* menu */
+
+body.rtl .sub-toggle .fa-angle-right {
+
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+body.rtl .sub-toggle .fa-angle-left {
+
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* post metas */
+
+body.rtl .entry-metas ul li.posted-by a:before {
+
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+
+/* back to top */
+
+body.rtl .orchid-backtotop {
+
+	right: 20px;
+	left: auto;
+}
+
+/* carousel */
+
+body.rtl .owl-carousel {
+
+	direction: rtl;
+}
+
+body.rtl .owl-carousel .owl-item {
+
+	float: right;
+}
+
+.owl-carousel.owl-rtl {
+
+	direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+
+	float: right;
+}
+
+.woocommerce .woocommerce-pagination .page-numbers li a.prev,
+.woocommerce .woocommerce-pagination .page-numbers li a.next {
+
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+
+/*
+==================================================
+=
+= Base default widget styles
+=
+====================================
+*/
+
+body.rtl .widget_product_categories ul.children li a::before {
+
+	content: '\f104';
+}
+
+body.rtl #yith-quick-view-close {
+	left: 15px;
+	right: auto;
+}
+
+.bx-chevron-right::before {
+  content: "\e9e3";
+}
+
+#yith-quick-view-content div.summary {
+  text-align: right;
+}
+
+.woocommerce .product-sale span, .woocommerce span.onsale, .woocommerce ul.products li.product .onsale {
+  line-height: 1.5;
+}
+
+
+.patigation .page-numbers.next::after {
+  content: "\e9e3";
+}
+
+
+.patigation .page-numbers.prev::after {
+  content: "\e9e4";
+}
+
+
+* {
+  letter-spacing: 0 !important;
+}
+
+small {
+  margin-right: 5px;
+  margin-left:unset;
+}
+
+.rtl.woocommerce .price_label  {
+  direction: rtl;
+}
+
+.woocommerce div.product .entry-summary .woocommerce-variation-add-to-cart .button, .woocommerce div.product .entry-summary form.cart .button {
+  margin-right: unset;
+}
+
+.iziToast-rtl .iziToast-body .iziToast-icon {
+  left: auto;
+  right: 0;
+}
+
+.iziToast-rtl  {
+  direction: rtl;
+}
+
+@media (max-width: 768px) {
+	.woocommerce div.product .entry-summary .woocommerce-variation-add-to-cart .button, .woocommerce div.product .entry-summary form.cart .button {
+		font-size: 7.5px;
+	}
+}

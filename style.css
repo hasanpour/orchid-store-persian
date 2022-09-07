@@ -1,0 +1,24 @@
+/*!
+Theme Name: قالب فارسی ارکید
+Version: 2.0.0
+Template: orchid-store
+Theme URI: https://themebeez.com/themes/orchid-store/
+Author: Armin Hasanpour
+Author URI: https://about.me/hasanpour
+Description: لطفا این قالب را فعال کنید و قالب اصلی را حذف نکنید
+Tested up to: 6.0.2
+Requires PHP: 7.0.0
+License: GNU General Public License v2 or Later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html or Later
+Text Domain: orchid-store
+Tags: custom-background, custom-menu, custom-logo, featured-images, full-width-template, one-column, two-columns, theme-options, threaded-comments, translation-ready, footer-widgets, blog, left-sidebar, right-sidebar, e-commerce, rtl-language-support
+*/
+
+/* Add top margin because we move it to bottom of post content */
+.inner-content-metas {
+  margin-top: 20px;
+}
+
+header.woocommerce-products-header {
+  margin-top: 20px;
+}
